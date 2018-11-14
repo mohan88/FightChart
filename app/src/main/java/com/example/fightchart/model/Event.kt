@@ -1,0 +1,76 @@
+package com.example.fightchart.model
+
+import com.squareup.moshi.Json
+
+data class Event(
+    @Json(name = "arena")
+    val arena: String = "", // McNichols Arena
+    @Json(name = "base_title")
+    val baseTitle: String = "", // UFC® 1
+    @Json(name = "corner_audio_available")
+    val cornerAudioAvailable: Boolean = false, // false
+    @Json(name = "corner_audio_blue_stream_url")
+    val cornerAudioBlueStreamUrl: Any? = Any(), // null
+    @Json(name = "corner_audio_red_stream_url")
+    val cornerAudioRedStreamUrl: Any? = Any(), // null
+    @Json(name = "created")
+    val created: Any? = Any(), // null
+    @Json(name = "end_event_dategmt")
+    val endEventDategmt: String = "", // 1993-11-13T05:00:00Z
+    @Json(name = "event_date")
+    val eventDate: String = "", // 1993-11-12T00:00:00Z
+    @Json(name = "event_dategmt")
+    val eventDategmt: String = "", // 1993-11-12T22:00:00Z
+    @Json(name = "event_status")
+    val eventStatus: String = "", // POST_EVENT
+    @Json(name = "event_time_text")
+    val eventTimeText: String = "",
+    @Json(name = "event_time_zone_text")
+    val eventTimeZoneText: String = "",
+    @Json(name = "feature_image")
+    val featureImage: String = "",
+    @Json(name = "fm_fnt_feed_url")
+    val fmFntFeedUrl: String = "", // http://liveapi.fightmetric.com/V1/122/Fnt.json
+    @Json(name = "id")
+    val id: Int = 0, // 1880
+    @Json(name = "isppvevent")
+    val isppvevent: Boolean = false, // false
+    @Json(name = "last_modified")
+    val lastModified: String = "", // 2015-10-08T15:15:05Z
+    @Json(name = "latitude")
+    val latitude: Double = 0.0, // -23.5505199
+    @Json(name = "location")
+    val location: String = "", // Denver, Colorado
+    @Json(name = "longitude")
+    val longitude: Double = 0.0, // -46.63330939999999
+    @Json(name = "main_event_fighter1_id")
+    val mainEventFighter1Id: Int = 0, // 144
+    @Json(name = "main_event_fighter2_id")
+    val mainEventFighter2Id: Int = 0, // 19
+    @Json(name = "secondary_feature_image")
+    val secondaryFeatureImage: String = "",
+    @Json(name = "short_description")
+    val shortDescription: String = "",
+    @Json(name = "statid")
+    val statid: Int = 0, // 122
+    @Json(name = "subtitle")
+    val subtitle: String = "", // The Beginning
+    @Json(name = "ticket_general_sale_date")
+    val ticketGeneralSaleDate: Any? = Any(), // null
+    @Json(name = "ticket_general_sale_text")
+    val ticketGeneralSaleText: String = "", // N/A
+    @Json(name = "ticket_image")
+    val ticketImage: String = "",
+    @Json(name = "ticket_seller_name")
+    val ticketSellerName: Any? = Any(), // null
+    @Json(name = "ticketurl")
+    val ticketurl: String = "",
+    @Json(name = "title_tag_line")
+    val titleTagLine: Any? = Any(), // null
+    @Json(name = "trailer_url")
+    val trailerUrl: Any? = Any(), // null
+    @Json(name = "twitter_hashtag")
+    val twitterHashtag: String = "",
+    @Json(name = "url_name")
+    val urlName: String = "" // UFC-1-The-Beginning
+)
